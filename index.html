@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Meter</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Test your typing speed</h1>
+    <h2 id="typed-word" class="no-select">Start Your test</h2>
+    <textarea name="textarea" id="user-type" class="no-select" oninput="updateResults()" readonly></textarea>
+    <button id="btn" class="no-select">Start</button>
+    <div id="results">
+        <p>Words: <span id="word-count" class="no-select">0</span> words typed of <span id="total-words" class="no-select">0</span> words.</p>
+        <p>Characters: <span id="char-count" class="no-select">0</span> characters typed of <span id="total-characters" class="no-select">0</span> characters.</p>
+        <p>Time: <span id="time-count" class="no-select">0</span>s</p>
+        <p>Typing Speed: <span id="cpm" class="no-select">0</span> CPM, <span id="wpm" class="no-select">0</span> WPM</p>
+        <p>Wrong Characters: <span id="wrong-characters" class="no-select">0</span> Characters</p>
+        <p>Wrong Words: <span id="wrong-words" class="no-select">0</span> Words</p>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
